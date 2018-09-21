@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4800/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4800/" rel="alternate" type="text/html" /><updated>2018-09-21T19:40:32+08:00</updated><id>http://localhost:4800/</id><title type="html">Iris Whisper</title><subtitle>最后的轻语</subtitle><author><name>true</name></author><entry><title type="html">使用Jekyll建立个人博客的记录</title><link href="http://localhost:4800/2018/09/21/use-jekyll-establish-blog-in-github-log.html" rel="alternate" type="text/html" title="使用Jekyll建立个人博客的记录" /><published>2018-09-21T00:00:00+08:00</published><updated>2018-09-21T00:00:00+08:00</updated><id>http://localhost:4800/2018/09/21/use-jekyll-establish-blog-in-github-log</id><content type="html" xml:base="http://localhost:4800/2018/09/21/use-jekyll-establish-blog-in-github-log.html">&lt;blockquote&gt;
+  &lt;p&gt;关于建立这个博客的一点小记录&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;set-up&quot;&gt;Set UP&lt;/h1&gt;
+
+&lt;h2 id=&quot;create-dev-enviroment-install-rubygem---jekyll&quot;&gt;Create Dev Enviroment :Install Ruby(Gem) &amp;amp;  Jekyll&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://rubyinstaller.org/downloads/&quot;&gt;Windows Ruby Installer Download&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jekyllrb.com/docs/installation/windows/&quot;&gt;Jekyll Install Document&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll Themes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://jekyllcn.com/docs/frontmatter/&quot;&gt;Jekyll 中文文档&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll 官方网站&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;install-ruby-with-windows-installer&quot;&gt;Install Ruby with Windows Installer&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;安装的常规操作&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;install-jekyll&quot;&gt;Install Jekyll&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Notice:Ruby NEED &lt;strong&gt;Divkit&lt;/strong&gt; version
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem install jekyll bundler
+jekyll -v
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;create-an-empty-jekyll-project&quot;&gt;Create an Empty Jekyll Project&lt;/h4&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll new [Project Name]
+# 切换到项目目录的根目录，运行Jekyll生成 _Site
+cd [Project Name]
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;launch-the-local-server&quot;&gt;Launch the Local Server&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;运行本地服务器，默认地址为：&lt;code class=&quot;highlighter-rouge&quot;&gt;http://localhost:4000&lt;/code&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll serve --watch
+# 启动方法2
+bundle exec jekyll serve
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;themes&quot;&gt;Themes&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/xukimseven/HardCandy-Jekyll&quot;&gt;HardCandy-Jekyll&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;安装Jekyll分页插件
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Windows
+gem install jekyll-paginate
+# Unixlike
+sudo gem install jekyll-paginate
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;(非必须)安装Bundle
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;修改项目
+    &lt;blockquote&gt;
+      &lt;p&gt;_config.yaml
+index.html(首页)
+About.html
+“查看元素”所有需要修改的项目&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;post-格式&quot;&gt;POST 格式&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;必须放在开头，cover可以留空，tags需要使用空格分开。&lt;/li&gt;
+  &lt;li&gt;每个冒号后面都有一个空格
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
+layout: post
+title: 'Hello Jekyll'
+date: 2017-04-18
+author: Jekyll
+color: rgb(255,210,32)
+cover: 'http://on2171g4d.bkt.clouddn.com/jekyll-banner.png'
+tags: jekyll
+---
+&amp;gt; 首页展示时填写的介绍，没有则需要删除
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;代码高亮&quot;&gt;代码高亮&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;中间为代码体
+```&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+
+# Question
+
+#### Permission denied - bind(2) for 127.0.0.1:4000
+- 端口被占用，打开_config.yml 在最后加上一行 `port: 5000` (其他端口也可)。注意冒号和5000之间有空格
+
+#### in `block in verify_gemfile_dependencies_are_found!': Could not find gem 'tzinfo-data x64-mingw32' in any of the gem sources listed in your Gemfile. (Bundler::GemNotFound)
+- 在根目录下安装bundle
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;cd [Project Root]
+bundle install
+```&lt;/p&gt;
+
+&lt;h1 id=&quot;参考资料&quot;&gt;参考资料&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.pchou.info/ssgithubPage/2013-01-03-build-github-blog-page-01.html&quot;&gt;一步步在GitHub上创建博客主页&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://beiyuu.com/github-pages&quot;&gt;使用Github Pages建独立博客&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/swanson/lagom&quot;&gt;Blog模板&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/xukimseven/HardCandy-Jekyll&quot;&gt;相关主题&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Margaret</name></author><category term="blog" /><summary type="html">关于建立这个博客的一点小记录</summary></entry></feed>
