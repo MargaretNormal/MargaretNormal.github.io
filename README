@@ -1,0 +1,12 @@
+# THANKS
+- 感谢[@xukimseven](https://github.com/xukimseven) 的框架。项目地址：[HardCandy-Jekyll
+](https://github.com/xukimseven/HardCandy-Jekyll)
+
+
+# Others
+- 相关问题及记录：[使用Jekyll建立个人博客的记录](https://margaretnormal.github.io/2018/09/21/use-jekyll-establish-blog-in-github-log.html)
+- Notice:
+	- 如果提示缺少bundle或者其他什么bundle相关的问题，使用`bundle install`
+	- 如果提示端口访问禁止，则在_config.yaml中添加`port:4800`或者其他数字指定的端口
+	- 启动服务器如果`jekyll serve `不行就用`bundle exec jekyll serve`
+	- 项目名需要是 `[用户名].github.io`，不然可能会出错
