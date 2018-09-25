@@ -130,7 +130,7 @@
 
 <h1 id="set-up">Set UP</h1>
 
-<h2 id="create-dev-enviroment-install-rubygem---jekyll">Create Dev Enviroment :Install Ruby(Gem) &amp;  Jekyll</h2>
+<h3 id="create-dev-enviroment-install-rubygem---jekyll">Create Dev Enviroment :Install Ruby(Gem) &amp;  Jekyll</h3>
 <ul>
   <li><a href="https://rubyinstaller.org/downloads/">Windows Ruby Installer Download</a></li>
   <li><a href="https://jekyllrb.com/docs/installation/windows/">Jekyll Install Document</a></li>
@@ -146,14 +146,15 @@
 
 <h4 id="install-jekyll">Install Jekyll</h4>
 <ul>
-  <li>Notice:Ruby NEED <strong>Divkit</strong> version
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install jekyll bundler
-jekyll -v
-</code></pre></div>    </div>
-  </li>
+  <li>Notice:Ruby NEED <strong>Divkit</strong> version</li>
 </ul>
 
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install jekyll bundler
+jekyll -v
+</code></pre></div></div>
+
 <h4 id="create-an-empty-jekyll-project">Create an Empty Jekyll Project</h4>
+
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll new [Project Name]
 # 切换到项目目录的根目录，运行Jekyll生成 _Site
 cd [Project Name]
@@ -162,43 +163,56 @@ cd [Project Name]
 
 <h4 id="launch-the-local-server">Launch the Local Server</h4>
 <ul>
-  <li>运行本地服务器，默认地址为：<code class="highlighter-rouge">http://localhost:4000</code>
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll serve --watch
+  <li>运行本地服务器，默认地址为：<code class="highlighter-rouge">http://localhost:4000</code></li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll serve --watch
 # 启动方法2
 bundle exec jekyll serve
-</code></pre></div>    </div>
-  </li>
-</ul>
+</code></pre></div></div>
 
 <h4 id="themes">Themes</h4>
 <ul>
   <li><a href="https://github.com/xukimseven/HardCandy-Jekyll">HardCandy-Jekyll</a></li>
-  <li>安装Jekyll分页插件
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Windows
+  <li>安装Jekyll分页插件</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Windows
 gem install jekyll-paginate
 # Unixlike
 sudo gem install jekyll-paginate
-</code></pre></div>    </div>
-  </li>
-  <li>(非必须)安装Bundle
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle install
-</code></pre></div>    </div>
-  </li>
+</code></pre></div></div>
+
+<ul>
+  <li>安装Bundle</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle install
+</code></pre></div></div>
+
+<ul>
   <li>修改项目
     <blockquote>
-      <p>_config.yaml
-index.html(首页)
-About.html
+      <p>_config.yaml<br />
+index.html(首页)<br />
+About.html<br />
 “查看元素”所有需要修改的项目</p>
     </blockquote>
   </li>
 </ul>
 
+<h4 id="仓库命名">仓库命名</h4>
+<ul>
+  <li>仓库必须以 <code class="highlighter-rouge">[Username].github.io</code> 为名</li>
+</ul>
+
 <h4 id="post-格式">POST 格式</h4>
 <ul>
   <li>必须放在开头，cover可以留空，tags需要使用空格分开。</li>
-  <li>每个冒号后面都有一个空格
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+  <li>每个冒号后面都有一个空格</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
 layout: post
 title: 'Hello Jekyll'
 date: 2017-04-18
@@ -208,35 +222,37 @@ cover: 'http://on2171g4d.bkt.clouddn.com/jekyll-banner.png'
 tags: jekyll
 ---
 &gt; 首页展示时填写的介绍，没有则需要删除
-</code></pre></div>    </div>
-  </li>
-</ul>
+</code></pre></div></div>
 
 <h4 id="代码高亮">代码高亮</h4>
 <ul>
-  <li>中间为代码体
-```</li>
+  <li>中间为代码体</li>
 </ul>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
-
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+&lt;figure class="highlight"&gt;&lt;pre&gt;&lt;code class="language-ruby" data-lang="ruby"&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;print_hi&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;name&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="nb"&gt;puts&lt;/span&gt; &lt;span class="s2"&gt;"Hi, &lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="nb"&gt;name&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;span class="n"&gt;print_hi&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'Tom'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="c1"&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-# Question
-
-#### Permission denied - bind(2) for 127.0.0.1:4000
-- 端口被占用，打开_config.yml 在最后加上一行 `port: 5000` (其他端口也可)。注意冒号和5000之间有空格
-
-#### in `block in verify_gemfile_dependencies_are_found!': Could not find gem 'tzinfo-data x64-mingw32' in any of the gem sources listed in your Gemfile. (Bundler::GemNotFound)
-- 在根目录下安装bundle
 </code></pre></div></div>
-<p>cd [Project Root]
+
+<h1 id="question">Question</h1>
+
+<h4 id="permission-denied---bind2-for-1270014000">Permission denied - bind(2) for 127.0.0.1:4000</h4>
+<ul>
+  <li>端口被占用，打开_config.yml 在最后加上一行 <code class="highlighter-rouge">port: 5000</code> (其他端口也可)。注意冒号和5000之间有空格</li>
+</ul>
+
+<h4 id="in-block-in-verify_gemfile_dependencies_are_found-could-not-find-gem-tzinfo-data-x64-mingw32-in-any-of-the-gem-sources-listed-in-your-gemfile-bundlergemnotfound">in `block in verify_gemfile_dependencies_are_found!’: Could not find gem ‘tzinfo-data x64-mingw32’ in any of the gem sources listed in your Gemfile. (Bundler::GemNotFound)</h4>
+<ul>
+  <li>在根目录下安装bundle</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd [Project Root]
 bundle install
-```</p>
+</code></pre></div></div>
 
 <h1 id="参考资料">参考资料</h1>
 
@@ -245,6 +261,7 @@ bundle install
   <li><a href="http://beiyuu.com/github-pages">使用Github Pages建独立博客</a></li>
   <li><a href="https://github.com/swanson/lagom">Blog模板</a></li>
   <li><a href="https://github.com/xukimseven/HardCandy-Jekyll">相关主题</a></li>
+  <li><a href="http://www.cnblogs.com/yyyyyyyyyy/p/9696046.html">通过jekyll在Github 搭建个人博客</a></li>
 </ol>
 
   <!-- 引入share模块 -->

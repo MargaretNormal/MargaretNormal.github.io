@@ -12,7 +12,7 @@ tags: blog
 
 # Set UP
 
-## Create Dev Enviroment :Install Ruby(Gem) &  Jekyll
+### Create Dev Enviroment :Install Ruby(Gem) &  Jekyll
 - [Windows Ruby Installer Download](https://rubyinstaller.org/downloads/)
 - [Jekyll Install Document](https://jekyllrb.com/docs/installation/windows/)
 - [Jekyll Themes](http://jekyllthemes.org/)
@@ -24,12 +24,14 @@ tags: blog
 
 #### Install Jekyll 
 - Notice:Ruby NEED **Divkit** version
+
 ```
 gem install jekyll bundler
 jekyll -v
 ```
 
 #### Create an Empty Jekyll Project
+
 ```
 jekyll new [Project Name]
 # 切换到项目目录的根目录，运行Jekyll生成 _Site
@@ -39,6 +41,7 @@ cd [Project Name]
 
 #### Launch the Local Server
 - 运行本地服务器，默认地址为：`http://localhost:4000`
+
 ```
 jekyll serve --watch
 # 启动方法2
@@ -48,25 +51,35 @@ bundle exec jekyll serve
 #### Themes
 - [HardCandy-Jekyll](https://github.com/xukimseven/HardCandy-Jekyll)
 - 安装Jekyll分页插件
+
 ```
 # Windows
 gem install jekyll-paginate
 # Unixlike
 sudo gem install jekyll-paginate
 ```
-- (非必须)安装Bundle
+
+- 安装Bundle
+
 ```
 bundle install
 ```
+
 - 修改项目
-> _config.yaml
-> index.html(首页)
-> About.html
-> "查看元素"所有需要修改的项目
+> _config.yaml  
+> index.html(首页)  
+> About.html  
+> "查看元素"所有需要修改的项目  
+
+
+#### 仓库命名
+- 仓库必须以 `[Username].github.io` 为名
+
 
 #### POST 格式
 - 必须放在开头，cover可以留空，tags需要使用空格分开。
 - 每个冒号后面都有一个空格
+
 ```
 ---
 layout: post
@@ -80,8 +93,11 @@ tags: jekyll
 > 首页展示时填写的介绍，没有则需要删除
 ```
 
+
+
 #### 代码高亮
 - 中间为代码体
+
 ```
 {% highlight ruby %}
 def print_hi(name)
@@ -93,6 +109,9 @@ print_hi('Tom')
 ```
 
 
+
+
+
 # Question
 
 #### Permission denied - bind(2) for 127.0.0.1:4000
@@ -100,6 +119,7 @@ print_hi('Tom')
 
 #### in `block in verify_gemfile_dependencies_are_found!': Could not find gem 'tzinfo-data x64-mingw32' in any of the gem sources listed in your Gemfile. (Bundler::GemNotFound)
 - 在根目录下安装bundle
+
 ```
 cd [Project Root]
 bundle install
@@ -114,3 +134,4 @@ bundle install
 2. [使用Github Pages建独立博客](http://beiyuu.com/github-pages)
 3. [Blog模板](https://github.com/swanson/lagom)
 4. [相关主题](https://github.com/xukimseven/HardCandy-Jekyll)
+5. [通过jekyll在Github 搭建个人博客](http://www.cnblogs.com/yyyyyyyyyy/p/9696046.html)
