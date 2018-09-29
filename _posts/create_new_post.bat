@@ -16,7 +16,7 @@ rem echo date: %DATE:~0,4%-%DATE:~5,2%-%DATE:~8,2% %TIME:~0,2%:%TIME:~3,2%:%TIME
 echo date: %DATE:~0,4%-%DATE:~5,2%-%DATE:~8,2%>>%filefullpath%
 echo author: Margaret>>%filefullpath%
 echo color: rgb(%colorR%,%colorG%,%colorB%)>>%filefullpath%
-echo cover: ''../assets/image/titlepage/''>>%filefullpath%
+echo cover: '../assets/image/titlepage/'>>%filefullpath%
 echo tags: blog>>%filefullpath%
 echo --->>%filefullpath%
 echo.>>%filefullpath%

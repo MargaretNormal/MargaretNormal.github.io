@@ -4,7 +4,7 @@ title: '一些小脚本'
 date: 2018-09-29
 author: Margaret
 color: rgb(153,62,144)
-cover: ''../assets/image/titlepage/''
+cover: '../assets/image/titlepage/bower_princess.jpg'
 tags: log cmd AutoHotkey
 ---
 
@@ -43,7 +43,7 @@ rem echo date: %DATE:~0,4%-%DATE:~5,2%-%DATE:~8,2% %TIME:~0,2%:%TIME:~3,2%:%TIME
 echo date: %DATE:~0,4%-%DATE:~5,2%-%DATE:~8,2%>>%filefullpath%
 echo author: Margaret>>%filefullpath%
 echo color: rgb(%colorR%,%colorG%,%colorB%)>>%filefullpath%
-echo cover: ''../assets/image/titlepage/''>>%filefullpath%
+echo cover: '../assets/image/titlepage/'>>%filefullpath%
 echo tags: blog>>%filefullpath%
 echo --->>%filefullpath%
 rem 输出空行，这个空行必须存在
