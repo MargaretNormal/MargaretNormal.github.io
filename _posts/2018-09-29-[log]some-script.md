@@ -56,6 +56,7 @@ echo ^> >>%filefullpath%
 ### SVN和VS项目自动更新和编译
 
 - SVN安装时必须安装命令行工具(Command-line tools)
+- 开机启动: 将需要开机启动的相关bat文件，放到`C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp`目录下
 
 ```
 @ echo off
