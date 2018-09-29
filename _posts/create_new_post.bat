@@ -21,4 +21,4 @@ echo tags: blog>>%filefullpath%
 echo --->>%filefullpath%
 echo.>>%filefullpath%
 rem ^将>显示为正常的输出字符串
-echo ^>>>%filefullpath%
+echo ^> >>%filefullpath%
